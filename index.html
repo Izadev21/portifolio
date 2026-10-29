@@ -1,0 +1,205 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Luiza Marinho — Desenvolvedora</title>
+<meta name="description" content="Portfólio de Luiza Marinho, desenvolvedora front-end com experiência full-stack. Interfaces web e mobile, APIs e bancos de dados.">
+<meta property="og:title" content="Luiza Marinho — Desenvolvedora">
+<meta property="og:description" content="Interfaces web e mobile conectadas a APIs e bancos de dados.">
+<meta name="theme-color" content="#FBF5F2" media="(prefers-color-scheme: light)">
+<meta name="theme-color" content="#160B10" media="(prefers-color-scheme: dark)">
+<link rel="icon" href="favicon.svg" type="image/svg+xml">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,300..700;1,9..144,300..700&family=Manrope:wght@400;500;600;700&family=IBM+Plex+Mono:wght@400;500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="styles.css">
+<script>
+  (function () {
+    try {
+      var t = localStorage.getItem("lm-theme");
+      if (!t) t = matchMedia("(prefers-color-scheme: dark)").matches ? "dark" : "light";
+      document.documentElement.dataset.theme = t;
+    } catch (e) {
+      document.documentElement.dataset.theme = "light";
+    }
+  })();
+</script>
+</head>
+<body>
+<a class="skip" href="#conteudo">Pular para o conteúdo</a>
+<div class="spotlight" aria-hidden="true"></div>
+
+<div class="layout">
+  <aside class="side">
+    <div class="side__top">
+      <p class="eyebrow"><span class="dot"></span>Portfólio · <span id="year">2026</span></p>
+      <button class="theme" id="themeToggle" type="button" aria-label="Alternar tema claro e escuro">
+        <svg class="sun" viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="4.5"/><path d="M12 2v2.5M12 19.5V22M4.2 4.2l1.8 1.8M18 18l1.8 1.8M2 12h2.5M19.5 12H22M4.2 19.8 6 18M18 6l1.8-1.8"/></svg>
+        <svg class="moon" viewBox="0 0 24 24" aria-hidden="true"><path d="M20.5 14.2A8.5 8.5 0 1 1 9.8 3.5a6.8 6.8 0 0 0 10.7 10.7z"/></svg>
+      </button>
+    </div>
+
+    <h1 class="name" aria-label="Luiza Marinho">
+      <span class="name__line" data-split>Luiza</span>
+      <span class="name__line name__line--italic"><span data-split>Marinho</span><span class="name__dot">.</span></span>
+    </h1>
+    <p class="role">Desenvolvedora front-end com experiência full-stack</p>
+    <p class="intro">Construo interfaces web e mobile e as conecto a APIs e bancos de dados.</p>
+
+    <nav class="toc" aria-label="Seções">
+      <a href="#sobre" data-nav="sobre"><i>01</i><span class="toc__line"></span>Sobre</a>
+      <a href="#tecnologias" data-nav="tecnologias"><i>02</i><span class="toc__line"></span>Tecnologias</a>
+      <a href="#projetos" data-nav="projetos"><i>03</i><span class="toc__line"></span>Projetos</a>
+      <a href="#contato" data-nav="contato"><i>04</i><span class="toc__line"></span>Contato</a>
+    </nav>
+
+    <div class="side__foot">
+      <ul class="social">
+        <li>
+          <a href="https://github.com/Izadev21" target="_blank" rel="noopener" aria-label="GitHub de Luiza">
+            <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 .5a11.5 11.5 0 0 0-3.64 22.41c.58.1.79-.25.79-.56v-2c-3.2.7-3.88-1.37-3.88-1.37-.53-1.33-1.28-1.69-1.28-1.69-1.05-.71.08-.7.08-.7 1.16.08 1.77 1.19 1.77 1.19 1.03 1.77 2.7 1.26 3.36.96.1-.75.4-1.26.73-1.55-2.55-.29-5.24-1.28-5.24-5.69 0-1.26.45-2.29 1.19-3.09-.12-.29-.52-1.46.11-3.05 0 0 .97-.31 3.17 1.18a11 11 0 0 1 5.77 0c2.2-1.49 3.17-1.18 3.17-1.18.63 1.59.23 2.76.11 3.05.74.8 1.19 1.83 1.19 3.09 0 4.42-2.7 5.39-5.26 5.68.41.36.78 1.06.78 2.14v3.17c0 .31.21.67.8.56A11.5 11.5 0 0 0 12 .5z"/></svg>
+          </a>
+        </li>
+        <li>
+          <a href="#contato" aria-label="Enviar mensagem">
+            <svg viewBox="0 0 24 24" aria-hidden="true"><rect x="2.5" y="4.5" width="19" height="15" rx="2.5"/><path d="m3.5 6.5 8.5 6.5 8.5-6.5"/></svg>
+          </a>
+        </li>
+      </ul>
+      <p class="where">Campinas, SP · <span id="clock">--:--</span></p>
+    </div>
+  </aside>
+
+  <main class="content" id="conteudo">
+    <section class="block" id="sobre" aria-labelledby="sobre-title">
+      <h2 class="block__title reveal" id="sobre-title"><i>01</i>Sobre</h2>
+      <div class="about">
+        <figure class="arch reveal">
+          <img src="assets/luiza.webp" alt="Luiza Marinho" width="640" height="800">
+        </figure>
+        <div class="about__text">
+          <p class="lead reveal">
+            Estudante do Ensino Médio integrado ao curso Técnico em Informática no Instituto Educacional
+            Raphael Di Santo, em Campinas (SP). Desenvolvo <em>interfaces com React e React Native</em>
+            e atuo também no back-end, com APIs REST em Node.js, Express e MongoDB.
+          </p>
+          <p class="reveal">
+            Integro a equipe do IntegraMente, aplicativo educacional para estudantes com Transtorno do Espectro
+            Autista (TEA) desenvolvido como trabalho de conclusão de curso. Também desenvolvi uma API com autenticação
+            JWT e recuperação de senha por e-mail, publicada na Vercel e consumida por um front-end em React,
+            além de aplicações de cadastro, listagem e consumo de APIs externas.
+          </p>
+          <p class="reveal">
+            Priorizo interfaces claras, código organizado e aplicações que funcionam de ponta a ponta.
+          </p>
+          <dl class="facts reveal">
+            <div><dt>Formação</dt><dd>Ensino Médio integrado ao Técnico em Informática</dd></div>
+            <div><dt>Instituição</dt><dd>Instituto Educacional Raphael Di Santo</dd></div>
+            <div><dt>TCC</dt><dd>IntegraMente, em equipe de 6 integrantes</dd></div>
+          </dl>
+        </div>
+      </div>
+    </section>
+
+    <section class="block" id="tecnologias" aria-labelledby="tec-title">
+      <h2 class="block__title reveal" id="tec-title"><i>02</i>Tecnologias</h2>
+      <div class="stack" id="stack"></div>
+    </section>
+
+    <section class="block" id="projetos" aria-labelledby="proj-title">
+      <h2 class="block__title reveal" id="proj-title"><i>03</i>Projetos</h2>
+      <div class="seg reveal" role="toolbar" aria-label="Filtrar projetos" id="filters">
+        <span class="seg__pill" aria-hidden="true"></span>
+        <button type="button" class="is-active" data-filter="all" aria-pressed="true">Todos</button>
+        <button type="button" data-filter="fullstack" aria-pressed="false">Full-stack</button>
+        <button type="button" data-filter="web" aria-pressed="false">Web</button>
+        <button type="button" data-filter="mobile" aria-pressed="false">Mobile</button>
+        <button type="button" data-filter="estudos" aria-pressed="false">Estudos</button>
+      </div>
+      <ol class="projects" id="projectList" aria-live="polite"></ol>
+    </section>
+
+    <section class="block" id="contato" aria-labelledby="contato-title">
+      <h2 class="block__title reveal" id="contato-title"><i>04</i>Contato</h2>
+      <p class="lead reveal">Para propostas, projetos ou dúvidas sobre o meu trabalho, envie uma mensagem pelo formulário ou pelos canais abaixo.</p>
+      <div class="contact">
+        <form class="form reveal" id="contactForm" novalidate>
+          <div class="field">
+            <input id="nome" name="nome" type="text" autocomplete="name" required minlength="2" placeholder=" ">
+            <label for="nome">Nome</label>
+            <small class="error" aria-live="polite"></small>
+          </div>
+          <div class="field">
+            <input id="email" name="email" type="email" autocomplete="email" required placeholder=" ">
+            <label for="email">E-mail</label>
+            <small class="error" aria-live="polite"></small>
+          </div>
+          <div class="field">
+            <select id="assunto" name="assunto">
+              <option>Proposta profissional</option>
+              <option>Projeto</option>
+              <option>Trabalho acadêmico</option>
+              <option>Outro assunto</option>
+            </select>
+            <label for="assunto" class="is-static">Assunto</label>
+          </div>
+          <div class="field">
+            <textarea id="mensagem" name="mensagem" rows="5" required minlength="10" maxlength="1000" placeholder=" "></textarea>
+            <label for="mensagem">Mensagem</label>
+            <small class="error" aria-live="polite"></small>
+          </div>
+          <button class="btn btn--solid" type="submit">Enviar mensagem <span aria-hidden="true">→</span></button>
+          <p class="form__ok" id="formOk" role="status" hidden>Seu aplicativo de e-mail foi aberto com a mensagem preenchida. Confirme o envio por ele.</p>
+        </form>
+        <ul class="channels reveal">
+          <li>
+            <button type="button" class="channel" id="copyEmail">
+              <span>E-mail</span><b id="emailText"></b><i data-label>Copiar</i>
+            </button>
+          </li>
+          <li>
+            <a class="channel" href="https://github.com/Izadev21" target="_blank" rel="noopener">
+              <span>GitHub</span><b>Izadev21</b><i>↗</i>
+            </a>
+          </li>
+        </ul>
+      </div>
+    </section>
+
+    <footer class="footer">
+      <p>© <span id="year2">2026</span> Luiza Marinho · Campinas, SP</p>
+      <a href="#conteudo">Voltar ao topo ↑</a>
+    </footer>
+  </main>
+</div>
+
+<nav class="dock" aria-label="Navegação">
+  <a href="#sobre" data-nav="sobre"><svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="8" r="4"/><path d="M4 21a8 8 0 0 1 16 0"/></svg>Sobre</a>
+  <a href="#tecnologias" data-nav="tecnologias"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="m8 7-5 5 5 5M16 7l5 5-5 5"/></svg>Stack</a>
+  <a href="#projetos" data-nav="projetos"><svg viewBox="0 0 24 24" aria-hidden="true"><rect x="3" y="3" width="7.5" height="7.5" rx="2"/><rect x="13.5" y="3" width="7.5" height="7.5" rx="2"/><rect x="3" y="13.5" width="7.5" height="7.5" rx="2"/><rect x="13.5" y="13.5" width="7.5" height="7.5" rx="2"/></svg>Projetos</a>
+  <a href="#contato" data-nav="contato"><svg viewBox="0 0 24 24" aria-hidden="true"><rect x="2.5" y="4.5" width="19" height="15" rx="2.5"/><path d="m3.5 6.5 8.5 6.5 8.5-6.5"/></svg>Contato</a>
+</nav>
+
+<dialog class="modal" id="modal" aria-labelledby="mTitle">
+  <div class="modal__inner">
+    <button class="modal__close" type="button" data-close aria-label="Fechar">✕</button>
+    <div class="modal__media" id="mMedia"></div>
+    <div class="modal__body">
+      <p class="modal__kicker" id="mKicker"></p>
+      <h3 id="mTitle"></h3>
+      <p class="modal__desc" id="mDesc"></p>
+      <ul class="modal__features" id="mFeatures"></ul>
+      <figure class="modal__extra" id="mExtra" hidden></figure>
+      <dl class="modal__facts" id="mFacts"></dl>
+      <ul class="tags" id="mTags"></ul>
+      <div class="modal__links" id="mLinks"></div>
+    </div>
+  </div>
+</dialog>
+
+<div class="toast" id="toast" role="status" aria-live="polite"></div>
+
+<script src="script.js"></script>
+</body>
+</html>
